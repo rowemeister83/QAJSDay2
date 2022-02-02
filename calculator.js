@@ -42,9 +42,9 @@ function mult (num1, num2){
 
 
 function disp(num1, num2, operator, answer){
-    let child = document.createElement("li");
-    child.innerHTML = num1, num2, operator, answer;
-    DOM.output.appendChild(child);
+    let addlist = document.createElement("li");
+    addlist.innerHTML = num1, num2, operator, answer;
+    DOM.output.appendChild(addlist);
 }
 function clear()
 {

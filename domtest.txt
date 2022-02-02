@@ -1,0 +1,64 @@
+'use strict'
+DOM.JS
+
+export const pageParagraph = document.getElementById(`para`);
+export const pageButton = document.getElementById(`but`);
+export const pageInput = document.getElementById(`in`);
+export const pageList = document.getElementById(`list`);
+
+file.html
+
+
+<!DOCTYPE html>
+  <head>
+  </head>
+  <body>
+    <input type="text" id="in" placeholder="type in here" />
+    <button id="but" type="button">CLICK ME</button>
+    <p id="para"></p>
+    <ul id="list">
+      <li>item 1</li>
+    </ul>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
+
+
+script.js
+
+`use strict`
+
+// IMPORT STATEMENT
+import * as DOM from './dom.js';
+
+// DOM 
+
+// Document Object Model
+
+// PAGE
+//  HTML
+//    HEAD
+//      METADATA
+//    BODY
+//      HEADER
+//      PARAGRAPH
+
+// CREATING A DOM FILE
+// and exporting it!
+
+// const pageButton = document.getElementById(`but`);
+
+let str = "hello";
+
+let changeText = str => DOM.pageParagraph.innerHTML = `${str}`;
+
+DOM.pageButton.onclick = () => addToList(DOM.pageInput.value); //changeText(DOM.pageInput.value);
+
+function addToList(str) {
+
+  let child = document.createElement(`li`);
+  child.innerHTML = str;
+  DOM.pageList.appendChild(child);
+
+}

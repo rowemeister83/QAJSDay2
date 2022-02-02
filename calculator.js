@@ -1,2 +1,2 @@
 `use strict`
-import * as DOM from './dom.js';
+import * as DOM from './calculatordom.js';

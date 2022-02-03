@@ -9,6 +9,11 @@ DOM.btnDiv.onclick = () => div(DOM.inputOne.value, DOM.inputTwo.value);
 DOM.btnMult.onclick = () => mult(DOM.inputOne.value, DOM.inputTwo.value);
 DOM.btnEql.onclick = () => disp();
 DOM.btnClear.onclick = () => clear();
+let answer = 0;
+
+let calculation = {
+
+}
 
 function add (num1, num2){
     let operator = "+";
